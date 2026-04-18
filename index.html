@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Stitch | Garments Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="container nav">
+      <div class="logo">Urban Stitch</div>
+
+      <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#">Shirts</a>
+        <a href="#">T-Shirts</a>
+        <a href="#">Jeans</a>
+        <a href="#">Trousers</a>
+        <a href="#">Shoes</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <input type="text" placeholder="Search products..." />
+        <button>Shop Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Slider -->
+  <section class="hero">
+    <div class="slider">
+
+      <div class="slide active" style="background-image: url('images/hero1.jpg');">
+        <div class="overlay"></div>
+        <div class="slide-content">
+          <span class="tag">New Arrival</span>
+          <h1>Summer Collection 2026</h1>
+          <p>Upgrade your wardrobe with premium fashion made for everyday style.</p>
+          <a href="#" class="btn">Explore Collection</a>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url('images/hero2.jpg');">
+        <div class="overlay"></div>
+        <div class="slide-content">
+          <span class="tag">Trending Now</span>
+          <h1>Everyday Trousers</h1>
+          <p>Tailored comfort and premium fit for your daily look.</p>
+          <a href="#" class="btn">Shop Trousers</a>
+        </div>
+      </div>
+
+      <div class="slide" style="background-image: url('images/hero3.jpg');">
+        <div class="overlay"></div>
+        <div class="slide-content">
+          <span class="tag">Must Have</span>
+          <h1>Stylish Denim Picks</h1>
+          <p>Modern denims designed to stand out with comfort and confidence.</p>
+          <a href="#" class="btn">View Denims</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="slider-dots">
+      <span class="dot active" onclick="showSlide(0)"></span>
+      <span class="dot" onclick="showSlide(1)"></span>
+      <span class="dot" onclick="showSlide(2)"></span>
+    </div>
+  </section>
+
+  <!-- Featured Categories -->
+  <section class="categories container">
+    <div class="section-header">
+      <h2>Featured Categories</h2>
+      <p>Choose your style from our latest premium collection.</p>
+    </div>
+
+    <div class="category-grid">
+      <div class="card">
+        <img src="images/cat1.jpg" alt="Shirts">
+        <div class="card-content">
+          <h3>Shirts</h3>
+          <p>Classic and casual fits for every occasion.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/cat2.jpg" alt="Trousers">
+        <div class="card-content">
+          <h3>Trousers</h3>
+          <p>Smart cuts with all-day comfort and style.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/cat3.jpg" alt="Polos">
+        <div class="card-content">
+          <h3>Polos</h3>
+          <p>Clean and polished looks for modern wear.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/cat4.jpg" alt="Jeans">
+        <div class="card-content">
+          <h3>Jeans</h3>
+          <p>Premium denim for a timeless appearance.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/cat5.jpg" alt="Cargo">
+        <div class="card-content">
+          <h3>Cargo</h3>
+          <p>Utility-inspired comfort with a trendy edge.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/cat6.jpg" alt="T-Shirts">
+        <div class="card-content">
+          <h3>T-Shirts</h3>
+          <p>Easy everyday essentials in premium fabric.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/cat7.jpg" alt="Shorts">
+        <div class="card-content">
+          <h3>Shorts</h3>
+          <p>Relaxed and breathable styles for summer days.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="images/cat8.jpg" alt="Footwear">
+        <div class="card-content">
+          <h3>Footwear</h3>
+          <p>Complete your fashion with stylish essentials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Section -->
+  <section class="promo">
+    <div class="container promo-box">
+      <div>
+        <h2>Flat 40% Off On New Season Styles</h2>
+        <p>Grab the best deals on our latest arrivals before they’re gone.</p>
+      </div>
+      <a href="#" class="btn dark-btn">Shop Sale</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-box">
+      <div>
+        <h3>Urban Stitch</h3>
+        <p>Premium garments for modern fashion lovers.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>   
+      </div>
+
+      <div>
+        <h4>Categories</h4>
+        <a href="#">Shirts</a>
+        <a href="#">Jeans</a>
+        <a href="#">T-Shirts</a>
+        <a href="#">Trousers</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Urban Stitch. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
