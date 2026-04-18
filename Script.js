@@ -2,6 +2,7 @@ const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 
 let currentSlide = 0;
+let autoSlide;
 
 function showSlide(index) {
   slides.forEach((slide) => slide.classList.remove("active"));
@@ -18,9 +19,8 @@ function nextSlide() {
   showSlide(currentSlide);
 }
 
-setInterval(nextSlide, 3000);
 function startAutoSlide() {
-  autoSlide = setInterval(nextSlide, 3500);
+  autoSlide = setInterval(nextSlide, 3000);
 }
 
 function stopAutoSlide() {
